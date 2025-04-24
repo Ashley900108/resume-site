@@ -1,198 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Clean Blog - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-<nav>
-  <a href="scratch.html">Scratch Page</a> |
-  <a href="app.html">Riddle App</a> |
-  <a href="index.html">Resume Page</a>
-</nav>
-        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-            <div class="container px-4 px-lg-5">
-            
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scratch.css" />
+    <style>
+      header.masthead {
+        height: 80vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("music.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .site-heading {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      }
+
+      .site-heading h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .site-heading p {
+        font-size: 1.25rem;
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center; margin: 2rem 0">
+      <a href="resume.html" class="nav-button">Resume Page</a>
+
+      <span style="display: inline-block; width: 20px"></span>
+      <!-- Spacer block -->
+
+      <a href="#video" class="nav-button">Go to My Recent Favorite</a>
+      <a href="app.html" class="nav-button"
+        >Try my AI-collaborated Riddle Generator App</a
+      >
+    </div>
+
+    <header class="masthead">
+      <div class="container px-4 px-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="site-heading">
+              <h1>Music that I Love</h1>
+              <p>Curated with soul, rhythm, and passion.</p>
             </div>
-        </nav>
-        <!-- Page Header-->
-        <header class="masthead" style="background-image: url('nature2.jpg')">
-            <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1>Ashley Lai</h1>
-                            <span class="subheading">The girl that creates possibilities</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Main Content-->
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        
-                            <h2 class="post-title">Education</h2>
-                            <ul>
-                                <li>Brigham Young University, Accounting Major</li>
-                                <li>Brigham Young University, Statistics Minor</li>
-                            </ul>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <h2 class="post-title">Certifications/Skills</h2>
-                            <ul>
-                                <li>Exam FM (April 2024), Half Exam FAM Credit (December 2024)</li>
-                                <li>Programming/Data Analyzing Skills: VBA, Excel, R, Power BI, Python, SQL, HTML, Tableau</li>
-                                <li>CRLA International Tutor Certification (September 2024)</li>
-                                <li>Languages: English, Mandarin, Japanese (J-CAT Certified as JLPT N3), Korean</li>
-                            </ul>
-                    </div>
-                    <hr class="my-4" />
-                    <div class="post-preview">
-                        <h2 class="post-title">Experience</h2>
-                        <!-- <p class="post-meta"> -->
-                         <h5 style="font-weight:600">Library Statiscian, Brigham Young University</h5>
-                            <ul>
-                                 <li>Make visualizations using Tableau to explore and present useful information for people who work for library's management</li>
-                                <li>Assist professor's researches that are related to library</li>
-                            </ul>
-                        <h5 style="font-weight:600">Statistics Teaching Assistance, Brigham Young University</h5>
-                             <ul>
-                                <li>Assisted professor in writing and grading exams for a course related to Exam P.</li>
-                                <li>Answer student's questions about the university's mid level statistics theory course</li>
-                            </ul>
-                            
-                        <!-- </p> -->
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <div class="post-preview">
-                        <h2 class="post-title">Project/Research</h2>
-                            
-                                <h5 style="font-weight:600">Data and Asset Management Project, Charity Vision</h5>
-                                    <ul>
-                                        <li>Work for 17 of their international clinics to assist the management of records and medical devices.</li>
-                                    </ul>
-                                </li>
-                                <h5 style="font-weight:600">VBA Automation Project, Arlington Hall</h5>
-                                    <ul>
-                                        <li>Automated a significant portion of the dance studio’s employee scheduling process by applying VBA Automation.</li>
-                                    </ul>
-                                </li>
-                            
-                    </div>
-                    <hr class="my-4" />
-                    <div class="post-preview">
-                        <h2 class="post-title">Volunteer Experience</h2>
-                            
-                                <h5 style="font-weight:600">Statistics Club Committee Member, BYU Statistics Department </h5>
-                                    <ul>
-                                        <li>Assisted in organizing social event, mock interview, and prep sessions while managing academic responsibilities, demonstrating excellent multitasking and organizational skills.</li>
-                                    </ul>
-                            
-                    </div>
-                    
-                    <!-- <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Science has not yet mastered prophecy</h2>
-                            <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on August 24, 2023
-                        </p>
-                    </div>
-                    Divider-->
-                    <!-- <hr class="my-4" /> -->
-                    <!-- Post preview-->
-                    <!-- <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Failure is not an option</h2>
-                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on July 8, 2023
-                        </p>
-                    </div> -->
-                    <!-- Divider-->
-                    <!-- <hr class="my-4" /> -->
-                    <!-- Pager-->
-                    <!-- <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div> -->
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- Footer-->
-        <footer class="border-top">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+      </div>
+    </header>
+
+    <div class="content-block">
+      <!-- Block 1: K-Pop Section -->
+      <div style="margin-bottom: 2rem">
+        <h2>Genre: K-Pop</h2>
+        <ul>
+          <li>EXO</li>
+          <li>BTOB</li>
+          <li>Aespa</li>
+        </ul>
+        <!-- Video embedded for K-Pop group -->
+        <div style="margin-top: 1rem">
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Iwdq3NtpeFQ?start=693"
+            title="BTOB's Live YouTube video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Block 2: K-R&B Section -->
+      <div style="margin-bottom: 2rem">
+        <h2>Genre: K-R&B</h2>
+        <ul>
+          <li>Big Naughty</li>
+          <li>Young K</li>
+        </ul>
+      </div>
+
+      <!-- Block 3: K-Indie Section -->
+      <div>
+        <h2>Genre: K-Indie</h2>
+        <ul>
+          <li>10CM</li>
+          <li>Rothy</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tableau Graph Centered -->
+    <div class="tableau-container">
+      <div class="tableauPlaceholder" id="viz1745470268685">
+        <noscript>
+          <a href="#">
+            <img
+              alt="Fruit"
+              src="https://public.tableau.com/static/images/US/USFruitConsumption/Fruit/1_rss.png"
+              style="border: none"
+            />
+          </a>
+        </noscript>
+        <object class="tableauViz" style="display: none">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param name="site_root" value="" />
+          <param name="name" value="USFruitConsumption/Fruit" />
+          <param name="tabs" value="no" />
+          <param name="toolbar" value="yes" />
+          <param
+            name="static_image"
+            value="https://public.tableau.com/static/images/US/USFruitConsumption/Fruit/1.png"
+          />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="en-US" />
+        </object>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var divElement = document.getElementById("viz1745470268685");
+      var vizElement = divElement.getElementsByTagName("object")[0];
+      vizElement.style.display = "block";
+      var scriptElement = document.createElement("script");
+      scriptElement.src =
+        "https://public.tableau.com/javascripts/api/viz_v1.js";
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+    <p></p>
+  </body>
 </html>
+
+<!-- can use BYU vocal point videos -->
