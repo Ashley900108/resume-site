@@ -1,0 +1,66 @@
+<!-- Save this as app.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Riddle Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .riddle-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="riddle-box">
+    <h2>🤔 Riddle Generator</h2>
+    <p id="riddle">Click the button to get a riddle!</p>
+    <button onclick="generateRiddle()">Get Riddle</button>
+  </div>
+
+  <script>
+    const riddles = [
+      "What has to be broken before you can use it? — An egg.",
+      "I’m tall when I’m young, and I’m short when I’m old. What am I? — A candle.",
+      "What month of the year has 28 days? — All of them.",
+      "What is full of holes but still holds water? — A sponge.",
+      "What question can you never answer yes to? — Are you asleep yet?",
+    ];
+
+    function generateRiddle() {
+      const random = Math.floor(Math.random() * riddles.length);
+      document.getElementById("riddle").textContent = riddles[random];
+    }
+  </script>
+</body>
+</html>
