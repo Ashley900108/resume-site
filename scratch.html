@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/scratch.css" />
+    <style>
+      header.masthead {
+        height: 80vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("assets/img/music.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .site-heading {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      }
+
+      .site-heading h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .site-heading p {
+        font-size: 1.25rem;
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center; margin: 2rem 0">
+      <a href="index.html" class="nav-button">Home Page</a>
+
+      <span style="display: inline-block; width: 20px"></span>
+      <!-- Spacer block -->
+
+      <a href="#video" class="nav-button">Go to My Recent Favorite</a>
+      <a href="app.html" class="nav-button"
+        >Try my AI-collaborated Riddle Generator App</a
+      >
+    </div>
+
+    <header class="masthead">
+      <div class="container px-4 px-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="site-heading">
+              <h1>Music that I Love</h1>
+              <p>Curated with soul, rhythm, and passion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-block">
+      <!-- Block 1: K-Pop Section -->
+      <div style="margin-bottom: 2rem">
+        <h2>Genre: K-Pop</h2>
+        <ul>
+          <li>EXO</li>
+          <li>BTOB</li>
+          <li>Aespa</li>
+        </ul>
+        <!-- Video embedded for K-Pop group -->
+        <div style="margin-top: 1rem">
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Iwdq3NtpeFQ?start=693"
+            title="BTOB's Live YouTube video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Block 2: K-R&B Section -->
+      <div style="margin-bottom: 2rem">
+        <h2>Genre: K-R&B</h2>
+        <ul>
+          <li>Big Naughty</li>
+          <li>Young K</li>
+        </ul>
+      </div>
+
+      <!-- Block 3: K-Indie Section -->
+      <div>
+        <h2>Genre: K-Indie</h2>
+        <ul>
+          <li>10CM</li>
+          <li>Rothy</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tableau Graph Centered -->
+    <div class="tableau-container">
+      <div class="tableauPlaceholder" id="viz1745470268685">
+        <noscript>
+          <a href="#">
+            <img
+              alt="Fruit"
+              src="https://public.tableau.com/static/images/US/USFruitConsumption/Fruit/1_rss.png"
+              style="border: none"
+            />
+          </a>
+        </noscript>
+        <object class="tableauViz" style="display: none">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param name="site_root" value="" />
+          <param name="name" value="USFruitConsumption/Fruit" />
+          <param name="tabs" value="no" />
+          <param name="toolbar" value="yes" />
+          <param
+            name="static_image"
+            value="https://public.tableau.com/static/images/US/USFruitConsumption/Fruit/1.png"
+          />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="en-US" />
+        </object>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var divElement = document.getElementById("viz1745470268685");
+      var vizElement = divElement.getElementsByTagName("object")[0];
+      vizElement.style.display = "block";
+      var scriptElement = document.createElement("script");
+      scriptElement.src =
+        "https://public.tableau.com/javascripts/api/viz_v1.js";
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+    <p></p>
+  </body>
+</html>
+
+<!-- can use BYU vocal point videos -->
